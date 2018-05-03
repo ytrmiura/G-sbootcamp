@@ -1,0 +1,68 @@
+企画書
+
+Ｔｗｉｔｔｅｒ風アプリ
+
+	特徴
+	・つぶやきが５秒で消える
+	・吹き出し風デザイン
+	・人のつぶやきクリックでつぶやきが残る
+	・たまに消えるのに１５秒かかる
+	・自分の過去のつぶやきがたまに現れる
+
+	必要な言語
+	・フロントエンド　見た目　デザイン
+		:HTML
+		:CSS
+		:JavaScript
+			Ajax(自動更新)
+			canvas(つぶやき描画)
+	・データやりとり
+		:PHP
+	・つぶやき管理
+		:データベース
+
+
+	・流れ
+	データベース作り
+		　テーブル作って
+			ｐｈｐ作る
+				表示する
+
+	・データベース
+	DB名: gs_db_tweet
+
+		TABLE名: users
+			Field:	・id  	[int(12) AUTO_INCREMENT PRIMARY_KEY]
+					・first_name [VAR_CHAR(64)]
+					・last_name  [VAR_CHAR(64)]
+					・name  [VAR_CHAR(12)]
+					・user_pass  [VAR_CHAR(20)]
+		TABLE名: tweets
+			Field:	・id  	[int(12) AUTO_INCREMENT PRIMARY_KEY]
+					・user_id		[int(12)]		session
+					・user_name	[VAR_CHAR(16)]	session
+					・tweet	[VAR_CHAR(20)]
+					・indate	[datetime]
+					・view_flag [int(1)]
+					
+
+
+	・作成の流れ
+		1. アカウント管理
+		2. 簡易チャット作成
+		3. 自動更新を実装
+		4. HTML,CSS実装
+		5. 吹き出し、描画等実装
+		6. 5秒で表示が消えるアルゴリズムを作成
+		7. 追加機能実装
+
+
+|						|
+|			[]			|
+|						|
+|				[]		|
+|		[]				|
+|			[]			|
+|						|
+|					[]	|
+|	[]		[]			|

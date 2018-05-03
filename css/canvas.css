@@ -1,0 +1,16 @@
+#screen {
+  	background: url(../img/test2.jpg );
+	height: 600px; 
+	width: 1000px; 
+	margin-right:auto; 
+	margin-left:auto; 
+	position:relative ;
+
+  }
+
+  body{
+  	margin-right: auto;
+  	margin-left: auto;
+  	text-align: center;
+  	margin-top: 90px;
+  }
